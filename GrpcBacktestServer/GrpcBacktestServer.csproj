@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\localuser\.nuget\packages\pricinglibrary\2.0.4.2\contentFiles\any\net6.0\MarketDataFeed\sample_market.csv" />
+    <None Remove="Protos\test_params.proto" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="Protos\test_params.proto" GrpcServices="Server" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Grpc.AspNetCore" Version="2.49.0" />
+    <PackageReference Include="PricingLibrary" Version="2.0.4.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HedgingLibrary\HedgingLibrary.csproj" />
+  </ItemGroup>
+
+</Project>

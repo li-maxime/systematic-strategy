@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "BacktestConsole": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Users\\localuser\\source\\repos\\systematic-strategies-net\\systematic-trading\\Resources\\TestData\\Test_skip_1_day\\params_skip_1_day.json\r\nC:\\Users\\localuser\\source\\repos\\systematic-strategies-net\\systematic-trading\\Resources\\TestData\\Test_skip_1_day\\data_skip_1_day.csv\r\nC:\\Users\\localuser\\source\\repos\\systematic-strategies-net\\systematic-trading\\Resources\\pathskip_1_day.json\""
+    }
+  }
+}
